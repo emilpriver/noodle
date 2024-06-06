@@ -4,7 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     riot = {
-      url = "github:riot-ml/riot";
+      url = "github:emilpriver/riot";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     bytestring = {
@@ -40,6 +40,7 @@
                 ocamlPackages.ocaml
                 ocamlPackages.utop
                 ocamlPackages.ocamlformat
+                pkgs.dune-release
               ];
               inputsFrom = [
                 self'.packages.default
@@ -57,9 +58,7 @@
               pname = "noodle";
               propagatedBuildInputs = with ocamlPackages; [
                 inputs'.riot.packages.default
-                self'.packages.randomconv
                 alcotest
-                uri
               ];
               src = ./.;
             };

@@ -5,11 +5,11 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github emilpriver/noodle))
 
-(authors "Author Name")
+(authors "Emil Privér")
 
-(maintainers "Maintainer Name")
+(maintainers "Emil Privér")
 
 (license LICENSE)
 
@@ -17,10 +17,9 @@
 
 (package
  (name noodle)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "A http library for shippers")
+ (description "A http library for shippers")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
+  (topics "http library")))
 
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
