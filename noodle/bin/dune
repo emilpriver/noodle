@@ -1,0 +1,4 @@
+(executable
+ (public_name noodle)
+ (name main)
+ (libraries))

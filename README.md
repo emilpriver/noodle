@@ -1,1 +1,1 @@
-# noodle
+# noodle, Static Site Generator
